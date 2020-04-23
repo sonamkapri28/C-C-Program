@@ -1,0 +1,29 @@
+#include<stdio.h>
+#include<conio.h>
+#define FLAG 1
+main()
+{
+int a=20,b=4;
+clrscr();
+#if FLAG==0
+printf("Value of flag is zero \n");
+a++;
+b++;
+#elif FLAG==1
+printf("Value of flag is one \n");
+a--;
+b--;
+#elif FLAG==2
+printf("Value of flag is two \n");
+a=a-3;
+b=b-3;
+#else
+printf("Value of flag is greater than two or less than zero \n");
+a=a+b;
+b=a-b;
+#endif
+printf("a = %d , b = %d \n",a,b);
+printf("Program completed");
+getch();
+}
+
